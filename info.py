@@ -40,7 +40,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information *
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb://saidalimuhamed88:iladias2025@cluster0-shard-00-00.qt4dv.mongodb.net:27017,cluster0-shard-00-01.qt4dv.mongodb.net:27017,cluster0-shard-00-02.qt4dv.mongodb.net:27017/?ssl=true&replicaSet=atlas-dbsrld-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "LazyDeveloper")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
